@@ -18,6 +18,10 @@ class CreateBookingUseCase {
     required DateTime checkOut,
     required int guests,
   }) async {
+    if (guestName.trim().isEmpty) {
+      throw const DomainException('Ім’я гостя не може бути порожнім.');
+    }
+
     final hotel = await _hotels.getById(hotelId);
     if (hotel == null) {
       throw DomainException('Готель з id "$hotelId" не знайдено.');
