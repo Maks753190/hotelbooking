@@ -1,5 +1,5 @@
 {
-  "storage": "json",
-  "bookingsFile": "data/bookings.json",
+  "storage": "memory",
+  "bookingsFile": "storage/bookings.json",
   "language": "uk"
 }
