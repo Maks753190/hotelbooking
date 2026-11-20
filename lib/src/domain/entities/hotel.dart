@@ -16,3 +16,5 @@ class Hotel {
     required this.rating,
   });
 }
+@override
+  String toString() => 'Hotel($name, $city, $pricePerNight грн/ніч)';
