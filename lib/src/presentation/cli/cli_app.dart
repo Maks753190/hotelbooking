@@ -37,7 +37,7 @@ class CliApp {
           case '4':
             await _cancelBooking();
           case '0':
-            print('Вихід.');
+            print('До побачення! Дякуємо за користування.');
             return;
           default:
             print('Невідома команда, спробуйте ще раз.');
