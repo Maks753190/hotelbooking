@@ -1,0 +1,7 @@
+name: hotel_booking
+description: Консольний застосунок бронювання готелів (Clean Architecture, Лаб. №5).
+version: 1.0.0
+publish_to: none
+
+environment:
+  sdk: ^3.0.0
