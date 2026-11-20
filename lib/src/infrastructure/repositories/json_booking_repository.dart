@@ -52,6 +52,10 @@ class JsonBookingRepository implements BookingRepository {
 
   Future<void> _write(List<Booking> bookings) async {
     final file = File(filePath);
+Future<void> _write(List<Booking> bookings) async {
+    final file = File(filePath);
+    await file.parent.create(recursive: true);
+    final content = const JsonEncoder.withIndent('  ')
     final content = const JsonEncoder.withIndent('  ')
         .convert(bookings.map(_toJson).toList());
     await file.writeAsString(content);
